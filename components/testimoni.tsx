@@ -4,6 +4,8 @@ import Reveal from "@/components/ui/reveal";
 import { testimoni, testimoniBagian } from "@/data/portofolio";
 
 export default function Testimoni() {
+  if (testimoni.length === 0) return null;
+
   return (
     <section>
       <div className="mx-auto max-w-6xl px-4 sm:px-6">

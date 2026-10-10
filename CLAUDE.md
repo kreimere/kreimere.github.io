@@ -1,7 +1,7 @@
 # portofolio-karya
 
 - **Pemilik:** Brian (content creator & video editor, pemula coding). Jelaskan dalam Bahasa Indonesia sederhana.
-- **Isi:** website portofolio video (hero + showreel, galeri karya dengan filter, layanan, tentang, testimoni, kontak).
+- **Isi:** website portofolio video (hero + showreel, galeri karya dengan filter, layanan, tentang, pengalaman/pendidikan dari CV, testimoni, kontak).
 - **Asal desain:** template gratis Cruip `open-react-template` (github.com/cruip/open-react-template), diubah jadi portofolio.
 
 ## Stack
@@ -12,7 +12,7 @@
 - shadcn/ui sengaja tidak dipasang supaya tidak menimpa gaya template.
 
 ## File penting
-- **Semua teks:** `data/portofolio.ts` (nama, kontak, karya, layanan, testimoni).
+- **Semua teks:** `data/portofolio.ts` (nama, kontak, karya, layanan, pengalaman, testimoni). Isi diambil dari CV Brian. Nilai kosong `""` / daftar kosong otomatis disembunyikan (YouTube, showreel, testimoni).
 - Gambar sampul karya: `public/karya/`, foto profil: `public/foto/`. Video = link YouTube/TikTok/IG.
 - Efek CSS bersama (`text-shimmer`, `border-glow`): `app/css/style.css`. Gaya tombol: `components/ui/buttons.tsx`.
 

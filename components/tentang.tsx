@@ -10,7 +10,7 @@ export default function Tentang() {
           <Reveal className="mx-auto w-full max-w-xs md:max-w-none">
             <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-linear-to-br from-gray-900 via-indigo-500/25 to-gray-900 ring-1 ring-gray-800">
               {profil.foto ? (
-                <Image src={profil.foto} fill sizes="(min-width: 768px) 400px, 320px" className="object-cover" alt={`Foto ${profil.nama}`} />
+                <Image src={profil.foto} fill sizes="(min-width: 768px) 400px, 320px" className="object-cover object-top" alt={`Foto ${profil.nama}`} />
               ) : (
                 <div className="flex size-full items-center justify-center font-nacelle text-7xl font-semibold text-indigo-200/40" aria-hidden="true">
                   {profil.inisial}

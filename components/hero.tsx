@@ -51,7 +51,9 @@ export default function Hero() {
             </div>
           </div>
 
-          <VideoModal link={hero.showreel} sampul={hero.sampulShowreel} judul="Showreel" />
+          {hero.showreel && (
+            <VideoModal link={hero.showreel} sampul={hero.sampulShowreel} judul="Showreel" />
+          )}
 
           {/* Angka pencapaian */}
           <motion.div

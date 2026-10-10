@@ -7,47 +7,51 @@
 export const profil = {
   nama: "Brian Anderson",
   inisial: "BA",
-  profesi: "Video Editor & Content Creator",
+  profesi: "Content Creator & Video Editor",
+  lokasi: "Jatinegara, Jakarta",
   // Foto profil: taruh file di folder public/foto, lalu tulis namanya di sini.
-  // Contoh: "/foto/profil.jpg". Kalau dikosongkan "", tampil inisial nama.
-  foto: "",
+  // Kalau dikosongkan "", tampil inisial nama.
+  foto: "/foto/profil.jpg",
 };
 
 export const kontak = {
   // Nomor WhatsApp pakai format 62..., tanpa + dan tanpa spasi.
-  whatsapp: "6281234567890",
-  pesanWhatsapp: "Halo Brian, saya lihat portofoliomu dan ingin diskusi proyek video.",
+  whatsapp: "628780696102",
+  pesanWhatsapp: "Halo Brian, saya lihat portofoliomu dan ingin diskusi soal konten.",
   email: "brian.workstudio@gmail.com",
-  instagram: "https://instagram.com/username",
-  tiktok: "https://tiktok.com/@username",
-  youtube: "https://youtube.com/@username",
+  instagram: "https://instagram.com/briannderson",
+  tiktok: "https://www.tiktok.com/@brianndersonn",
+  // Kosongkan "" kalau belum mau ditampilkan.
+  youtube: "",
 };
 
 export const menu = [
   { label: "Karya", href: "#karya" },
   { label: "Layanan", href: "#layanan" },
   { label: "Tentang", href: "#tentang" },
+  { label: "Pengalaman", href: "#pengalaman" },
   { label: "Kontak", href: "#kontak" },
 ];
 
 export const hero = {
   label: "Tersedia untuk proyek baru",
-  judul: "Video yang bikin orang berhenti scroll",
+  judul: "Konten yang bikin orang berhenti scroll",
   deskripsi:
-    "Saya membantu brand dan kreator mengubah footage mentah jadi video yang rapi, bercerita, dan siap tayang di YouTube, Reels, dan TikTok.",
+    "Saya membantu brand dan bisnis tampil menarik di media sosial, dari editing video pendek sampai desain konten, berbekal pengalaman langsung memegang marketing media sosial dan e-commerce.",
   tombolUtama: "Lihat Karya",
   tombolKedua: "Chat WhatsApp",
-  // Showreel: link video YouTube kamu (yang biasa, misalnya https://www.youtube.com/watch?v=xxxx)
-  showreel: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+  // Showreel: link video YouTube kamu (misalnya https://www.youtube.com/watch?v=xxxx).
+  // Kalau dikosongkan "", bagian video di atas disembunyikan.
+  showreel: "",
   // Gambar sampul showreel (taruh di public/karya)
   sampulShowreel: "/karya/showreel.jpg",
 };
 
 export const angka = [
-  { nilai: "150+", label: "Video selesai" },
-  { nilai: "40+", label: "Klien & brand" },
-  { nilai: "5 th", label: "Pengalaman" },
-  { nilai: "10jt+", label: "Total penonton" },
+  { nilai: "4+ th", label: "Pengalaman kerja" },
+  { nilai: "3", label: "Perusahaan" },
+  { nilai: "9", label: "Software dikuasai" },
+  { nilai: "S1", label: "BINUS University" },
 ];
 
 // Kategori untuk tombol filter di bagian Karya.
@@ -110,45 +114,75 @@ export const karya = [
 export const layananBagian = {
   label: "Layanan",
   judul: "Apa yang bisa saya bantu",
-  deskripsi: "Dari ide sampai video siap upload. Pilih yang kamu butuhkan.",
+  deskripsi: "Dari ide konten sampai siap upload. Pilih yang kamu butuhkan.",
 };
 
-// ikon yang tersedia: "film", "smartphone", "palette", "sparkles", "music", "captions"
+// ikon yang tersedia: "film", "smartphone", "palette", "sparkles", "music", "captions", "megaphone", "shopping"
 export const layanan = [
-  { ikon: "film", judul: "Video YouTube", deskripsi: "Vlog, edukasi, dan dokumenter dengan alur cerita yang enak ditonton." },
-  { ikon: "smartphone", judul: "Reels & TikTok", deskripsi: "Video vertikal pendek dengan hook kuat dan tempo cepat." },
-  { ikon: "sparkles", judul: "Motion Graphics", deskripsi: "Teks animasi, lower third, dan intro yang bikin video terlihat mahal." },
-  { ikon: "palette", judul: "Color Grading", deskripsi: "Warna yang konsisten dan sinematik sesuai karakter brand kamu." },
-  { ikon: "music", judul: "Sound Design", deskripsi: "Musik, efek suara, dan pembersihan audio supaya jernih." },
-  { ikon: "captions", judul: "Subtitle Animasi", deskripsi: "Subtitle gaya kekinian supaya penonton tetap menonton tanpa suara." },
+  { ikon: "smartphone", judul: "Video Reels & TikTok", deskripsi: "Video vertikal pendek dengan hook kuat, tempo cepat, dan musik yang pas." },
+  { ikon: "film", judul: "Editing Video", deskripsi: "Merapikan footage mentah jadi video yang enak ditonton, pakai CapCut dan Filmora." },
+  { ikon: "captions", judul: "Subtitle & Teks", deskripsi: "Subtitle dan teks di layar supaya pesan tetap sampai walau ditonton tanpa suara." },
+  { ikon: "palette", judul: "Desain Konten", deskripsi: "Feed, carousel, dan materi promosi dengan Canva, Photoshop, dan Figma." },
+  { ikon: "megaphone", judul: "Kelola Media Sosial", deskripsi: "Perencanaan konten dan pengelolaan akun bisnis supaya aktif dan konsisten." },
+  { ikon: "shopping", judul: "Konten E-Commerce", deskripsi: "Visual produk dan materi toko online yang membantu menaikkan penjualan." },
 ];
 
 export const tentang = {
   label: "Tentang Saya",
   judul: "Halo, saya Brian",
   paragraf: [
-    "Saya video editor dan content creator yang sudah bekerja dengan kreator, UMKM, sampai brand nasional.",
-    "Buat saya, editing bukan sekadar memotong klip. Ini soal ritme, emosi, dan membuat penonton bertahan sampai detik terakhir.",
+    "Saya lulusan International Business Management dari BINUS University, berdomisili di Jakarta. Pengalaman kerja saya mulai dari barista, agen properti, sampai supervisor marketing yang memegang media sosial dan e-commerce.",
+    "Dari situ saya belajar bahwa konten yang bagus bukan cuma enak dilihat, tapi juga harus membantu bisnis. Saya pekerja keras, cepat beradaptasi, dan senang berkolaborasi dengan orang dari berbagai latar belakang.",
   ],
-  alat: ["Premiere Pro", "After Effects", "DaVinci Resolve", "CapCut"],
+  alat: ["CapCut", "Filmora", "Adobe Photoshop", "Canva", "Figma", "Microsoft Excel", "PowerPoint"],
 };
+
+// Riwayat kerja & pendidikan (dari CV). Urutkan dari yang terbaru.
+export const pengalamanBagian = {
+  label: "Pengalaman",
+  judul: "Perjalanan saya",
+};
+
+export const pengalaman = [
+  {
+    tahun: "2024 - 2026",
+    tempat: "Max Auto Parts",
+    posisi: "Supervisor Marketing (Social Media & E-Commerce)",
+    poin: ["Marketing media sosial & e-commerce", "HRD", "Finance (AR/AP/Payment)", "Operasional (SAP System)", "Data analyst (Excel)"],
+  },
+  {
+    tahun: "2022",
+    tempat: "MJO Property",
+    posisi: "Agent",
+    poin: ["Admin media sosial", "Show unit ke calon pembeli"],
+  },
+  {
+    tahun: "2022",
+    tempat: "Underground Coffee",
+    posisi: "Junior - Senior Barista",
+    poin: ["Barista & kasir", "Marketing", "Stok inventaris"],
+  },
+];
+
+export const pendidikan = [
+  { tahun: "2021 - 2025", tempat: "BINUS University, Alam Sutera", keterangan: "International Business Management. Panitia Dana & Panitia Keamanan." },
+  { tahun: "2018 - 2021", tempat: "SMAK 7 Penabur, Jakarta", keterangan: "" },
+];
 
 export const testimoniBagian = {
   label: "Testimoni",
   judul: "Kata mereka yang pernah bekerja sama",
 };
 
-export const testimoni = [
-  { nama: "Nama Klien", peran: "Owner, Nama Brand", isi: "Hasil editnya rapi dan cepat. Engagement Reels kami naik drastis sejak dipegang Brian." },
-  { nama: "Nama Klien", peran: "YouTuber", isi: "Paham banget gaya channel saya. Revisi minim, komunikasi enak." },
-  { nama: "Nama Klien", peran: "Marketing Manager", isi: "Video company profile kami jadi terlihat jauh lebih profesional. Recommended!" },
-];
+// Bagian testimoni otomatis tersembunyi selama daftar ini kosong.
+// Contoh isi: { nama: "Nama Klien", peran: "Owner, Nama Brand", isi: "Hasilnya rapi dan cepat!" },
+export const testimoni: { nama: string; peran: string; isi: string }[] = [];
 
 export const ajakan = {
-  judul: "Punya footage yang menunggu diedit?",
-  deskripsi: "Ceritakan proyekmu. Saya balas secepatnya, biasanya di hari yang sama.",
+  judul: "Siap bikin kontenmu lebih menarik?",
+  deskripsi: "Ceritakan kebutuhanmu. Saya balas secepatnya.",
 };
 
 export const footer = {
-  tagline: "Video editing untuk kreator dan brand.",
+  tagline: "Konten & video untuk brand dan bisnis.",
 };

@@ -18,7 +18,7 @@ export const tautanSosial = [
   { nama: "Instagram", href: kontak.instagram, ikon: <BrandIcon path={siInstagram.path} /> },
   { nama: "TikTok", href: kontak.tiktok, ikon: <BrandIcon path={siTiktok.path} /> },
   { nama: "YouTube", href: kontak.youtube, ikon: <BrandIcon path={siYoutube.path} /> },
-];
+].filter((s) => !s.href.endsWith(":") && s.href !== "");
 
 export function WhatsappIcon({ className }: { className?: string }) {
   return <BrandIcon path={siWhatsapp.path} className={className} />;

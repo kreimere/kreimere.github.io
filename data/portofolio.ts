@@ -7,7 +7,7 @@
 export const profil = {
   nama: "Brian Anderson",
   inisial: "BA",
-  profesi: "Content Creator & Video Editor",
+  profesi: "Corporate Secretary & Creative Generalist",
   lokasi: "Jatinegara, Jakarta",
   // Foto profil: taruh file di folder public/foto, lalu tulis namanya di sini.
   // Kalau dikosongkan "", tampil inisial nama.
@@ -17,7 +17,7 @@ export const profil = {
 export const kontak = {
   // Nomor WhatsApp pakai format 62..., tanpa + dan tanpa spasi.
   whatsapp: "6285780696102",
-  pesanWhatsapp: "Halo Brian, saya lihat portofoliomu dan ingin diskusi soal konten.",
+  pesanWhatsapp: "Halo Brian, saya lihat portofoliomu dan ingin diskusi peluang kerja sama.",
   email: "brian.workstudio@gmail.com",
   instagram: "https://instagram.com/briannderson",
   tiktok: "https://www.tiktok.com/@brianndersonn",
@@ -34,10 +34,12 @@ export const menu = [
 ];
 
 export const hero = {
-  label: "Tersedia untuk proyek baru",
-  judul: "Konten yang bikin orang berhenti scroll",
+  label: "Terbuka untuk peluang kerja & proyek",
+  judul: "Satu orang, siap pegang banyak divisi",
   deskripsi:
-    "Saya membantu brand dan bisnis tampil menarik di media sosial, dari editing video pendek sampai desain konten, berbekal pengalaman langsung memegang marketing media sosial dan e-commerce.",
+    "Corporate Secretary yang terbiasa menangani finance, marketing, HRD, dan operasional sekaligus. Didukung keahlian Excel untuk data dan dashboard, serta kemampuan membuat konten kreatif untuk bisnis.",
+  // Label bidang di bawah deskripsi
+  bidang: ["Finance", "Marketing", "HRD", "Operasional", "Data & Excel", "Konten Kreatif"],
   tombolUtama: "Lihat Karya",
   tombolKedua: "Chat WhatsApp",
   // Showreel: link video YouTube kamu (misalnya https://www.youtube.com/watch?v=xxxx).
@@ -215,10 +217,10 @@ export const testimoniBagian = {
 export const testimoni: { nama: string; peran: string; isi: string }[] = [];
 
 export const ajakan = {
-  judul: "Siap bikin kontenmu lebih menarik?",
-  deskripsi: "Ceritakan kebutuhanmu. Saya balas secepatnya.",
+  judul: "Butuh orang yang bisa diandalkan di banyak bidang?",
+  deskripsi: "Ceritakan kebutuhan tim atau bisnismu. Saya balas secepatnya.",
 };
 
 export const footer = {
-  tagline: "Konten & video untuk brand dan bisnis.",
+  tagline: "Corporate secretary, data, dan konten kreatif untuk bisnis.",
 };

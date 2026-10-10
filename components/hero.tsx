@@ -33,9 +33,16 @@ export default function Hero() {
               {hero.judul}
             </motion.h1>
             <div className="mx-auto max-w-3xl">
-              <motion.p {...muncul(0.2)} className="mb-8 text-lg text-indigo-200/65 md:text-xl">
+              <motion.p {...muncul(0.2)} className="mb-6 text-lg text-indigo-200/65 md:text-xl">
                 {hero.deskripsi}
               </motion.p>
+              <motion.ul {...muncul(0.25)} className="mb-8 flex flex-wrap justify-center gap-2" aria-label="Bidang yang dikuasai">
+                {hero.bidang.map((b) => (
+                  <li key={b} className="rounded-full bg-gray-800/60 px-3 py-1 text-sm text-gray-300 ring-1 ring-gray-700/60">
+                    {b}
+                  </li>
+                ))}
+              </motion.ul>
               <motion.div {...muncul(0.3)} className="mx-auto flex max-w-xs flex-col gap-4 sm:max-w-none sm:flex-row sm:justify-center">
                 <a className={`${btnPrimary} w-full sm:w-auto`} href="#karya">
                   <span className="relative inline-flex items-center">

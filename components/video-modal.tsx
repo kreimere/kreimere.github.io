@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 import { Play, X } from "lucide-react";
 import { motion } from "motion/react";
+import { aset } from "@/lib/aset";
 import SecondaryIllustration from "@/public/images/secondary-illustration.svg";
 
 // Ambil kode video dari link YouTube biasa / youtu.be / shorts.
@@ -44,7 +45,7 @@ export default function VideoModal({ link, sampul, judul }: VideoModalProps) {
         <figure className="relative aspect-video w-full overflow-hidden rounded-2xl before:absolute before:inset-0 before:-z-10 before:bg-linear-to-br before:from-gray-900 before:via-indigo-500/20 before:to-gray-900">
           <Image
             className="object-cover opacity-60 grayscale transition duration-500 group-hover:scale-[1.02] group-hover:opacity-80 group-hover:grayscale-0"
-            src={sampul}
+            src={aset(sampul)}
             fill
             sizes="(min-width: 1152px) 1104px, 100vw"
             alt={judul}

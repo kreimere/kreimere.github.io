@@ -6,6 +6,7 @@ import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from "@headlessui/re
 import { motion } from "motion/react";
 import { ArrowUpRight, Maximize2, X } from "lucide-react";
 import Spotlight from "@/components/spotlight";
+import { aset } from "@/lib/aset";
 import SectionHeading from "@/components/ui/section-heading";
 import { karya, karyaBagian, kategoriKarya } from "@/data/portofolio";
 
@@ -27,7 +28,7 @@ function IsiKartu({ k }: { k: ItemKarya }) {
       <div className="relative aspect-[4/3] overflow-hidden bg-gray-900">
         <Image
           className="object-cover object-[50%_20%] transition-transform duration-500 group-hover/card:scale-105"
-          src={k.sampul}
+          src={aset(k.sampul)}
           fill
           sizes="(min-width: 1024px) 352px, (min-width: 640px) 50vw, 384px"
           alt={k.judul}
@@ -147,7 +148,7 @@ export default function Karya() {
                 </button>
                 <div className="relative min-h-0 flex-1">
                   <Image
-                    src={dibuka.sampul}
+                    src={aset(dibuka.sampul)}
                     alt={dibuka.judul}
                     width={1200}
                     height={1200}

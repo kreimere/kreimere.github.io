@@ -1,4 +1,4 @@
-import { Film, Smartphone, Palette, Sparkles, Music, Captions, Megaphone, ShoppingBag, type LucideIcon } from "lucide-react";
+import { Film, Smartphone, Palette, Sparkles, Music, Captions, Megaphone, ShoppingBag, ChartColumn, type LucideIcon } from "lucide-react";
 import SectionHeading from "@/components/ui/section-heading";
 import Reveal from "@/components/ui/reveal";
 import { layanan, layananBagian } from "@/data/portofolio";
@@ -12,6 +12,7 @@ const ikon: Record<string, LucideIcon> = {
   captions: Captions,
   megaphone: Megaphone,
   shopping: ShoppingBag,
+  chart: ChartColumn,
 };
 
 export default function Layanan() {

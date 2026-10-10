@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ChartColumn, Check } from "lucide-react";
 import Reveal from "@/components/ui/reveal";
 import { profil, tentang } from "@/data/portofolio";
 
@@ -30,7 +31,21 @@ export default function Tentang() {
                 <p key={p}>{p}</p>
               ))}
             </div>
-            <ul className="mt-6 flex flex-wrap gap-2" aria-label="Software yang dipakai">
+            <div className="mt-6 rounded-2xl bg-indigo-500/10 p-4 ring-1 ring-indigo-500/30">
+              <p className="mb-2 flex items-center gap-2 font-nacelle font-semibold text-gray-100">
+                <ChartColumn className="size-4 text-indigo-400" aria-hidden="true" />
+                {tentang.keahlianUtama.judul}
+              </p>
+              <ul className="flex flex-wrap gap-x-4 gap-y-1 text-indigo-200/80">
+                {tentang.keahlianUtama.poin.map((p) => (
+                  <li key={p} className="flex items-center gap-1.5">
+                    <Check className="size-4 text-indigo-400" aria-hidden="true" />
+                    {p}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <ul className="mt-4 flex flex-wrap gap-2" aria-label="Software yang dipakai">
               {tentang.alat.map((a) => (
                 <li key={a} className="rounded-full bg-gray-800/60 px-3 py-1 text-sm text-gray-300 ring-1 ring-gray-700/60">
                   {a}

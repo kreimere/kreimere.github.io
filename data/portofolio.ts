@@ -11,12 +11,12 @@ export const profil = {
   lokasi: "Jatinegara, Jakarta",
   // Foto profil: taruh file di folder public/foto, lalu tulis namanya di sini.
   // Kalau dikosongkan "", tampil inisial nama.
-  foto: "/foto/profil.jpg",
+  foto: "/foto/satcy.jpg",
 };
 
 export const kontak = {
   // Nomor WhatsApp pakai format 62..., tanpa + dan tanpa spasi.
-  whatsapp: "628780696102",
+  whatsapp: "6285780696102",
   pesanWhatsapp: "Halo Brian, saya lihat portofoliomu dan ingin diskusi soal konten.",
   email: "brian.workstudio@gmail.com",
   instagram: "https://instagram.com/briannderson",
@@ -48,9 +48,9 @@ export const hero = {
 };
 
 export const angka = [
-  { nilai: "4+ th", label: "Pengalaman kerja" },
-  { nilai: "3", label: "Perusahaan" },
-  { nilai: "9", label: "Software dikuasai" },
+  { nilai: "5+ th", label: "Pengalaman kerja" },
+  { nilai: "6", label: "Brand & perusahaan" },
+  { nilai: "8", label: "Software dikuasai" },
   { nilai: "S1", label: "BINUS University" },
 ];
 
@@ -117,12 +117,12 @@ export const layananBagian = {
   deskripsi: "Dari ide konten sampai siap upload. Pilih yang kamu butuhkan.",
 };
 
-// ikon yang tersedia: "film", "smartphone", "palette", "sparkles", "music", "captions", "megaphone", "shopping"
+// ikon yang tersedia: "film", "smartphone", "palette", "sparkles", "music", "captions", "megaphone", "shopping", "chart"
 export const layanan = [
   { ikon: "smartphone", judul: "Video Reels & TikTok", deskripsi: "Video vertikal pendek dengan hook kuat, tempo cepat, dan musik yang pas." },
-  { ikon: "film", judul: "Editing Video", deskripsi: "Merapikan footage mentah jadi video yang enak ditonton, pakai CapCut dan Filmora." },
-  { ikon: "captions", judul: "Subtitle & Teks", deskripsi: "Subtitle dan teks di layar supaya pesan tetap sampai walau ditonton tanpa suara." },
-  { ikon: "palette", judul: "Desain Konten", deskripsi: "Feed, carousel, dan materi promosi dengan Canva, Photoshop, dan Figma." },
+  { ikon: "film", judul: "Editing Video", deskripsi: "Merapikan footage mentah jadi video yang enak ditonton, lengkap dengan subtitle, pakai CapCut dan Filmora." },
+  { ikon: "chart", judul: "Data & Dashboard Excel", deskripsi: "Analisis data, data cleaning, dan dashboard profesional di Excel untuk laporan bisnis." },
+  { ikon: "palette", judul: "Desain Konten", deskripsi: "Feed, carousel, dan materi promosi dengan Canva dan Figma." },
   { ikon: "megaphone", judul: "Kelola Media Sosial", deskripsi: "Perencanaan konten dan pengelolaan akun bisnis supaya aktif dan konsisten." },
   { ikon: "shopping", judul: "Konten E-Commerce", deskripsi: "Visual produk dan materi toko online yang membantu menaikkan penjualan." },
 ];
@@ -131,10 +131,15 @@ export const tentang = {
   label: "Tentang Saya",
   judul: "Halo, saya Brian",
   paragraf: [
-    "Saya lulusan International Business Management dari BINUS University, berdomisili di Jakarta. Pengalaman kerja saya mulai dari barista, agen properti, sampai supervisor marketing yang memegang media sosial dan e-commerce.",
+    "Saya lulusan International Business Management (S.E.) dari BINUS University, berdomisili di Jakarta. Saat ini saya Corporate Secretary di Max Autoparts Indonesia, memegang finance, marketing, HRD, dan operasional. Di luar itu saya aktif sebagai model/talent dan desainer konten media sosial freelance.",
     "Dari situ saya belajar bahwa konten yang bagus bukan cuma enak dilihat, tapi juga harus membantu bisnis. Saya pekerja keras, cepat beradaptasi, dan senang berkolaborasi dengan orang dari berbagai latar belakang.",
   ],
-  alat: ["CapCut", "Filmora", "Adobe Photoshop", "Canva", "Figma", "Microsoft Excel", "PowerPoint"],
+  // Keahlian utama (ditampilkan lebih menonjol)
+  keahlianUtama: {
+    judul: "Microsoft Excel (Expert)",
+    poin: ["Data analyst", "Data cleaning", "Dashboard profesional"],
+  },
+  alat: ["Microsoft Excel", "CapCut", "Filmora 14", "Canva", "Figma", "Microsoft Word", "PowerPoint", "SAP System"],
 };
 
 // Riwayat kerja & pendidikan (dari CV). Urutkan dari yang terbaru.
@@ -146,14 +151,26 @@ export const pengalamanBagian = {
 export const pengalaman = [
   {
     tahun: "2024 - 2026",
-    tempat: "Max Auto Parts",
-    posisi: "Supervisor Marketing (Social Media & E-Commerce)",
-    poin: ["Marketing media sosial & e-commerce", "HRD", "Finance (AR/AP/Payment)", "Operasional (SAP System)", "Data analyst (Excel)"],
+    tempat: "Max Autoparts Indonesia",
+    posisi: "Corporate Secretary",
+    poin: ["Finance (AR/AP/Payment)", "Marketing (Social Media & E-Commerce)", "HRD", "Operasional (SAP System)", "Data analyst (Excel)"],
+  },
+  {
+    tahun: "2026",
+    tempat: "Bolt Active",
+    posisi: "Freelance Design Social Media",
+    poin: ["Desain konten media sosial"],
+  },
+  {
+    tahun: "2025",
+    tempat: "Satcy",
+    posisi: "Model / Talent",
+    poin: ["Foto produk & kampanye"],
   },
   {
     tahun: "2022",
     tempat: "MJO Property",
-    posisi: "Agent",
+    posisi: "Agent Property & Team Creative",
     poin: ["Admin media sosial", "Show unit ke calon pembeli"],
   },
   {
@@ -162,11 +179,23 @@ export const pengalaman = [
     posisi: "Junior - Senior Barista",
     poin: ["Barista & kasir", "Marketing", "Stok inventaris"],
   },
+  {
+    tahun: "2020 - 2021",
+    tempat: "Meaty Burger",
+    posisi: "Owner (Start-up Business)",
+    poin: ["Membangun usaha kuliner sendiri", "Desain promosi"],
+  },
 ];
 
 export const pendidikan = [
-  { tahun: "2021 - 2025", tempat: "BINUS University, Alam Sutera", keterangan: "International Business Management. Panitia Dana & Panitia Keamanan." },
+  { tahun: "2021 - 2025", tempat: "BINUS University, Alam Sutera", keterangan: "S1 International Business Management (S.E.), IPK 3.48. Panitia Dana & Panitia Keamanan." },
   { tahun: "2018 - 2021", tempat: "SMAK 7 Penabur, Jakarta", keterangan: "" },
+];
+
+// Pelatihan yang pernah diikuti.
+export const pelatihan = [
+  { tahun: "2026", tempat: "Data Experts", keterangan: "Komunitas Excel Indonesia (KEI)" },
+  { tahun: "2024", tempat: "Marketing & Sales", keterangan: "Max Autoparts" },
 ];
 
 export const testimoniBagian = {

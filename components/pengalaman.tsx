@@ -1,7 +1,7 @@
-import { Briefcase, GraduationCap } from "lucide-react";
+import { Award, Briefcase, GraduationCap } from "lucide-react";
 import SectionHeading from "@/components/ui/section-heading";
 import Reveal from "@/components/ui/reveal";
-import { pengalaman, pengalamanBagian, pendidikan } from "@/data/portofolio";
+import { pengalaman, pengalamanBagian, pendidikan, pelatihan } from "@/data/portofolio";
 
 function Judul({ ikon, teks }: { ikon: React.ReactNode; teks: string }) {
   return (
@@ -58,6 +58,21 @@ export default function Pengalaman() {
                     </div>
                   </Reveal>
                 ))}
+              </div>
+
+              <div className="mt-10">
+                <Judul ikon={<Award className="size-4" aria-hidden="true" />} teks="Pelatihan" />
+                <div className="space-y-4">
+                  {pelatihan.map((p, i) => (
+                    <Reveal key={p.tempat} delay={i * 0.1}>
+                      <div className="rounded-2xl bg-linear-to-br from-gray-900/50 via-gray-800/25 to-gray-900 p-5 ring-1 ring-gray-800">
+                        <p className="text-sm text-indigo-300">{p.tahun}</p>
+                        <p className="font-nacelle font-semibold text-gray-100">{p.tempat}</p>
+                        <p className="mt-1 text-indigo-200/65">{p.keterangan}</p>
+                      </div>
+                    </Reveal>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

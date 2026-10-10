@@ -16,6 +16,12 @@
 - Gambar sampul karya: `public/karya/`, foto profil: `public/foto/`. Video = link YouTube/TikTok/IG.
 - Efek CSS bersama (`text-shimmer`, `border-glow`): `app/css/style.css`. Gaya tombol: `components/ui/buttons.tsx`.
 
+## Deploy
+- Online di **https://kreimere.github.io** (repo GitHub `kreimere/kreimere.github.io`, publik, branch `main`).
+- GitHub Pages (Source = GitHub Actions) lewat `.github/workflows/deploy.yml`: setiap `git push` ke `main` otomatis build & online dalam ±2 menit.
+- `next.config.js` memakai `output: "export"` + `images.unoptimized`. Path gambar dari `public/` (string) wajib lewat `aset()` di `lib/aset.ts` supaya ikut basePath.
+- Push pertama butuh login Git Credential Manager (jalankan `git push` di Terminal panel, bukan Bash yang non-interaktif).
+
 ## Lingkungan
 - Node.js ada di `D:\Website` (folder program, jangan dipakai/dihapus). Muat ulang PATH di PowerShell sebelum `npm`.
 - Preview: `.claude/launch.json` → `D:\Website\npm.cmd run dev --prefix D:\portofolio-karya`, port 3000.

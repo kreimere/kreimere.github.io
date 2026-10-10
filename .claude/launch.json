@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "portofolio-karya",
+      "runtimeExecutable": "D:\\Website\\npm.cmd",
+      "runtimeArgs": ["run", "dev", "--prefix", "D:\\portofolio-karya"],
+      "port": 3000
+    }
+  ]
+}

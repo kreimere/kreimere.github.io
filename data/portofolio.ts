@@ -54,60 +54,67 @@ export const angka = [
   { nilai: "S1", label: "BINUS University" },
 ];
 
-// Kategori untuk tombol filter di bagian Karya.
-export const kategoriKarya = ["Semua", "YouTube", "Reels & TikTok", "Brand & Iklan"];
+export const karyaBagian = {
+  label: "Portofolio",
+  judul: "Hasil karya",
+  deskripsi: "Beberapa hasil kerja saya. Klik kartunya untuk melihat lebih jelas.",
+};
+
+// Kategori untuk tombol filter di bagian Karya. "Semua" harus tetap paling depan.
+export const kategoriKarya = ["Semua", "Desain Konten", "Model & Talent", "Brand & Bisnis"];
 
 // Daftar karya. Tambah/hapus satu blok { ... } untuk menambah/menghapus karya.
-// - link: link YouTube / TikTok / Instagram
-// - sampul: gambar di folder public/karya (kalau kosong, pakai gambar contoh)
+// - kategori: harus sama persis dengan salah satu kategori di atas
+// - sampul: gambar di folder public/karya
+// - link: link YouTube / TikTok / Instagram. Kalau dikosongkan "", klik kartu = gambar diperbesar.
 export const karya = [
   {
-    judul: "Travel Vlog: Seminggu di Labuan Bajo",
-    kategori: "YouTube",
-    klien: "Channel pribadi",
-    deskripsi: "Editing cinematic, color grading, dan sound design untuk vlog 12 menit.",
-    link: "https://youtube.com",
-    sampul: "/karya/contoh-1.png",
+    judul: "Visual Produk Bolt Active",
+    kategori: "Desain Konten",
+    klien: "Bolt Active",
+    deskripsi: "Desain konten media sosial untuk produk bola Bolt Active (freelance).",
+    link: "",
+    sampul: "/karya/bolt-active.png",
   },
   {
-    judul: "Launching Produk Skincare",
-    kategori: "Brand & Iklan",
-    klien: "Nama Brand",
-    deskripsi: "Iklan 30 detik dengan motion graphic dan teks kinetik.",
-    link: "https://youtube.com",
-    sampul: "/karya/contoh-2.png",
+    judul: "Poster Promo Single Meaty",
+    kategori: "Desain Konten",
+    klien: "Meaty Burger",
+    deskripsi: "Poster pre-order untuk usaha burger milik sendiri, dari foto produk sampai desain.",
+    link: "",
+    sampul: "/karya/meaty-burger.jpg",
   },
   {
-    judul: "Seri Reels Kuliner",
-    kategori: "Reels & TikTok",
-    klien: "Nama Restoran",
-    deskripsi: "10 video pendek dengan hook kuat di 3 detik pertama.",
-    link: "https://instagram.com",
-    sampul: "/karya/contoh-3.png",
+    judul: "Model Produk Tas Satcy",
+    kategori: "Model & Talent",
+    klien: "Satcy",
+    deskripsi: "Model / talent untuk foto produk ransel Satcy.",
+    link: "",
+    sampul: "/karya/satcy.jpg",
   },
   {
-    judul: "Podcast Highlight Clips",
-    kategori: "Reels & TikTok",
-    klien: "Nama Podcast",
-    deskripsi: "Potongan momen terbaik dengan subtitle animasi.",
-    link: "https://tiktok.com",
-    sampul: "/karya/contoh-2.png",
+    judul: "Foto Produk Kopi",
+    kategori: "Brand & Bisnis",
+    klien: "Underground Coffee",
+    deskripsi: "Konten foto produk untuk marketing kedai kopi, selain bertugas sebagai barista.",
+    link: "",
+    sampul: "/karya/underground-coffee.jpg",
   },
   {
-    judul: "Company Profile",
-    kategori: "Brand & Iklan",
-    klien: "Nama Perusahaan",
-    deskripsi: "Video profil 3 menit, dari wawancara sampai b-roll.",
-    link: "https://youtube.com",
-    sampul: "/karya/contoh-1.png",
+    judul: "Team Creative Properti",
+    kategori: "Brand & Bisnis",
+    klien: "MJO Property",
+    deskripsi: "Bagian dari tim kreatif: admin media sosial dan materi promosi properti.",
+    link: "",
+    sampul: "/karya/mjo-property.jpg",
   },
   {
-    judul: "Tutorial Editing untuk Pemula",
-    kategori: "YouTube",
-    klien: "Channel pribadi",
-    deskripsi: "Video edukasi dengan zoom, callout, dan b-roll pendukung.",
-    link: "https://youtube.com",
-    sampul: "/karya/contoh-3.png",
+    judul: "Corporate Secretary",
+    kategori: "Brand & Bisnis",
+    klien: "Max Autoparts Indonesia",
+    deskripsi: "Koordinasi tim untuk finance, marketing, HRD, dan operasional perusahaan.",
+    link: "",
+    sampul: "/karya/max-autoparts.jpg",
   },
 ];
 
@@ -188,7 +195,7 @@ export const pengalaman = [
 ];
 
 export const pendidikan = [
-  { tahun: "2021 - 2025", tempat: "BINUS University, Alam Sutera", keterangan: "S1 International Business Management (S.E.), IPK 3.48. Panitia Dana & Panitia Keamanan." },
+  { tahun: "2021 - 2025", tempat: "BINUS University, Alam Sutera", keterangan: "S1 International Business Management (S.E.), IPK 3.48." },
   { tahun: "2018 - 2021", tempat: "SMAK 7 Penabur, Jakarta", keterangan: "" },
 ];
 
